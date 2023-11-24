@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Black'), url('Metropolis-Black.otf') format('otffile');
+}
+@font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis Lightitalic'), url('Metropolis-LightItalic.otf') format('otffile');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Metropolis;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height of the container as needed */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-card {
+    flex: 1;
+    padding: 20px;
+}
+
+.photo-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    font-family: 'Metropolis';
+}
+
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.back-to-home-button {
+    position: left;
+    bottom: 20px;
+    left: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home-button:hover {
+    background-color: #595959;
+}
